@@ -8,7 +8,7 @@ class Scraper
     html=File.read(index_url)
 
     index_students=Nokogiri::HTML(html)
-    
+
     #Using #collect to return a new array of the student hashes
     index_students.css("div.student-card").collect do |student|
       {
@@ -18,6 +18,8 @@ class Scraper
       }
     end
 
+    ################################################################################
+    #Code below works but relies on creating and returning a local variable
     #students=[]
 
     #Either line of code works
