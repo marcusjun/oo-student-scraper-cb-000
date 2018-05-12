@@ -8,7 +8,7 @@ class Student
     @@all << student_hash.collect {|key,value| self.send(key.to_s+"=",value)}
 
 
-    student_hash.each {|key,value| self.send(key.to_s+"=",value)}
+    #student_hash.each {|key,value| self.send(key.to_s+"=",value)}
 
     #Code below does the same thing
     #student_hash.each do |key,value|
@@ -16,7 +16,7 @@ class Student
       #self.send(key.to_s+"=",value)
     #end
 
-    @@all << self
+    #@@all << self
 
   end
 
