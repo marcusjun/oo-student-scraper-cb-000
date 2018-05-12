@@ -52,7 +52,7 @@ class Scraper
       ##:linkedin => student_page.css("div.social-icon-container a").attribute("href").value,
       ##:github => student_page.css("div.social-icon-container a").attribute("href").value,
       ##:blog => student_page.css("div.social-icon-container a").attribute("href").value
-    }
+      }
       ##student_page.css("div.social-icon-container").each do |social_media|
       student_page.css("div.social-icon-container a").each do |social_media|
         ##:profile_quote => student_page.css("div.profile-quote").text,
