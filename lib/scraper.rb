@@ -11,8 +11,8 @@ class Scraper
 
     students=[]
 
-    #index_students.css("div.roster-cards-container").each do |student|
-    index_students.css("div.roster-cards-container div.student-card").each do |student|
+    index_students.css("div.student-card").each do |student|
+    #index_students.css("div.roster-cards-container div.student-card").each do |student|
       students << {
         :name => student.css("div.card-text-container h4.student-name").text,
         :location => student.css("div.card-text-container p.student-location").text,
