@@ -18,7 +18,7 @@ class Student
 
     ##########################################################################
     #Wish I could do this...
-    @@all = student_hash.collect {|key,value| self.send(key.to_s+"=",value)}
+    @@all << student_hash.collect {|key,value| self.send(key.to_s+"=",value)}
 
   end
 
