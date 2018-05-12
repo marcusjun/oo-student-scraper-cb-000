@@ -74,11 +74,11 @@ class Scraper
           ##:github => social_media.css("a").attribute("href").value
           ##student_profile[:github] = social_media.css("a").attribute("href").value
           student_profile[:github] = social_media.attribute("href").value
-        #else
-        elsif social_media.attribute("href").value != nil
+        else
+        ##elsif social_media.attribute("href").value != nil
           ##:blog => social_media.css("a").attribute("href").value
           ##student_profile[:blog] = social_media.css("a").attribute("href").value
-          student_profile[:blog] = social_media.attribute("href").value #if social_media.attribute("href").value != nil
+          student_profile[:blog] = social_media.attribute("href").value ##if social_media.attribute("href").value != nil
         end
       end
 
