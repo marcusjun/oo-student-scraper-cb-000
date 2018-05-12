@@ -8,10 +8,10 @@ class Student
     student_hash.each {|key,value| self.send(key.to_s+"=",value)}
 
     #Code below does the same thing
-    student_hash.each do |key,value|
+    #student_hash.each do |key,value|
       ##self.send(key,value)
-      self.send(key.to_s+"=",value)
-    end
+      #self.send(key.to_s+"=",value)
+    #end
 
     @@all << self
 
