@@ -77,7 +77,7 @@ class Scraper
         else
           ##:blog => social_media.css("a").attribute("href").value
           ##student_profile[:blog] = social_media.css("a").attribute("href").value
-          student_profile[:blog] = social_media.attribute("href").value if != nil
+          student_profile[:blog] = social_media.attribute("href").value if social_media.attribute("href").value != nil
         end
       end
 
