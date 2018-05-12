@@ -7,6 +7,7 @@ class Student
   def initialize(student_hash)
     student_hash.each {|key,value| self.send(key.to_s+"=",value)}
 
+    #Code below does the same thing
     student_hash.each do |key,value|
       ##self.send(key,value)
       self.send(key.to_s+"=",value)
