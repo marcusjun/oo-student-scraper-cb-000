@@ -47,7 +47,7 @@ class Scraper
 
     student_profile={
       :profile_quote => student_page.css("div.profile-quote").text,
-      :bio => student_page.css("div.bio-content.content-holder div.description-holder p").text.gsub("\n","").gsub("  ",""),
+      :bio => student_page.css("div.bio-content.content-holder div.description-holder p")#.text.gsub("\n","").gsub("  ",""),
       ##:twitter => student_page.css("div.social-icon-container a").attribute("href").value,
       ##:linkedin => student_page.css("div.social-icon-container a").attribute("href").value,
       ##:github => student_page.css("div.social-icon-container a").attribute("href").value,
