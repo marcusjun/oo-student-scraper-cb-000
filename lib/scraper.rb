@@ -11,6 +11,7 @@ class Scraper
 
     students=[]
 
+    #Either line of code works
     index_students.css("div.student-card").each do |student|
     #index_students.css("div.roster-cards-container div.student-card").each do |student|
       students << {
