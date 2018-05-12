@@ -35,6 +35,9 @@ class Student
 
   def add_student_attributes(attributes_hash)
     attributes_hash.collect {|key,value| self.send(key.to_s+"=",value)}
+
+    #Code below does the same thing
+    #attributes_hash.each {|key,value| self.send(key.to_s+"=",value)}
     #self
 
     #Code below does the same thing
