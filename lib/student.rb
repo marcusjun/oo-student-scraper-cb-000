@@ -37,6 +37,7 @@ class Student
     attributes_hash.each {|key,value| self.send(key.to_s+"=",value)}
     self
 
+    #Code below does the same thing
     #attributes_hash.each do |key,value|
       #self.send(key.to_s+"=",value)
     #end
